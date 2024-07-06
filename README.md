@@ -2,6 +2,7 @@
 This project is a web-based implementation of the classic game Tic Tac Toe, using JavaScript for the game logic and HTML/CSS for the interface. The game supports two players, X and O, who take turns marking the cells of a 3x3 grid. The goal is to be the first player to place three of their marks in a horizontal, vertical, or diagonal row.
 
 Features:
+<br>
 BASIC GAMEPLAY:
 * Players alternate turns to place their marks (X or O) in the grid.
 * The game detects win conditions and highlights the winning pattern.
