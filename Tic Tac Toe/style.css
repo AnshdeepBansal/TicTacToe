@@ -1,0 +1,105 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: black;
+}
+.container{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.score{
+  color: rgb(30, 165, 30);
+  margin: 0px 290px;
+  font-size: 50px;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.scoreO b{
+  color: rgb(53, 53, 234);
+}
+.scoreX b{
+  color: rgb(255, 0, 0);
+}
+  h1 {
+    margin-bottom: 40px;
+  }
+  
+  #mode{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0.5%;
+    border-radius: 10%;
+    border: 2px solid gray;
+  }
+
+  #board {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: rpw;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 55vh;
+    gap: 1%;
+  }
+  
+  .box {
+    background-color:rgb(237, 230, 230);
+    height: 32%;
+    width: 32%;
+    text-align: center;
+    font-size: 100px;
+    border: 2px solid black;
+    border-radius: 0.2em;
+    box-shadow: 0 0 0.6rem white;
+  }
+  
+  .box:hover {
+    scale: 1.03;
+    background-color: #ffffff;
+    box-shadow: 0 0 1.1rem rgb(85, 255, 210);
+  }
+  
+  #reset-button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    border: 4px solid brown;
+    border-radius: 5px;
+    background-color:blanchedalmond;
+    cursor: pointer;
+  }
+  
+  .winn {
+    border-radius: 10px;
+    position: absolute;
+    top:58px;
+    left: 610px;
+    padding: 10px;
+    color: #f00;
+    background-color: yellow;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .draw {
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(39, 178, 152);
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .vid{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+  }
