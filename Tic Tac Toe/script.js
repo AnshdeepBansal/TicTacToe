@@ -55,7 +55,7 @@ function checkForWin() {
         boxes[pattern[0]].style.backgroundColor = "green";
         boxes[pattern[1]].style.backgroundColor = "green";
         boxes[pattern[2]].style.backgroundColor = "green";
-        win.innerHTML = `<div class= "winn">WINNER IS ${pos1}</div>`;
+        win.innerHTML = `<div class= "winn">${pos1} Wins</div>`;
         if (pos1 == 'X' )
         {
           endGame(true);
