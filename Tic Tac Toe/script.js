@@ -62,6 +62,8 @@ function checkForWin() {
           x++;
           {
             bgEffect.innerHTML = `<video class="vid" autoplay src="videoo/winning_vid.mp4">`;
+            let vid = document.getElementsByClassName("vid");
+            vid.playbackRate = 2;
             setTimeout(()=>{
               bgEffect.innerHTML = '';
               endGame(false);
@@ -71,11 +73,14 @@ function checkForWin() {
         }
         else{
           o++;
+          endGame(true);
           {
             bgEffect.innerHTML = `<video class="vid" playbackRate=2 autoplay src="videoo/winning_vid.mp4">`;
-            document.getElementsByClassName('vid').playbackRate = 2;
+            let vid = document.getElementsByClassName("vid");
+            vid.playbackRate = 2;
             setTimeout(()=>{
               bgEffect.innerHTML = '';
+              endGame(false);
             },10000);
           }
           scO.innerHTML = ` <b>O</b> - ${o}`
