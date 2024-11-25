@@ -37,6 +37,12 @@ boxes.forEach((box)=>{
   })
 })
 
+const endGame = (trig)=>{
+  boxes.forEach((box)=>{
+      box.disabled = trig;
+  })
+}
+
 function checkForWin() {
   for(let pattern of winningpatterns){
     let pos1 = boxes[pattern[0]].innerText;
@@ -45,25 +51,29 @@ function checkForWin() {
     if(pos1 != "" && pos2 != "" && pos3 != ""){
       
       if(pos1 === pos2 && pos2 === pos3){ 
+        document.body.classList.add('disable-clicks');
         boxes[pattern[0]].style.backgroundColor = "green";
         boxes[pattern[1]].style.backgroundColor = "green";
         boxes[pattern[2]].style.backgroundColor = "green";
         win.innerHTML = `<div class= "winn">WINNER IS ${pos1}</div>`;
         if (pos1 == 'X' )
         {
+          endGame(true);
           x++;
           {
             bgEffect.innerHTML = `<video class="vid" autoplay src="videoo/winning_vid.mp4">`;
             setTimeout(()=>{
               bgEffect.innerHTML = '';
-            },10000);
+              endGame(false);
+            },3000);
           }
           scX.innerHTML = ` <b>X</b> - ${x}`;
         }
         else{
           o++;
           {
-            bgEffect.innerHTML = `<video class="vid" autoplay src="videoo/winning_vid.mp4">`;
+            bgEffect.innerHTML = `<video class="vid" playbackRate=2 autoplay src="videoo/winning_vid.mp4">`;
+            document.getElementsByClassName('vid').playbackRate = 2;
             setTimeout(()=>{
               bgEffect.innerHTML = '';
             },10000);
