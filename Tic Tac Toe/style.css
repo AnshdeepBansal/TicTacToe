@@ -86,10 +86,7 @@ body{
   
   .winn {
     border-radius: 10px;
-    position: absolute;
-    top:58px;
-    left: 610px;
-    padding: 10px;
+    padding: 20px;
     color: #f00;
     background-color: yellow;
     font-size: 50px;
