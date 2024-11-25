@@ -75,6 +75,14 @@ body{
     background-color:blanchedalmond;
     cursor: pointer;
   }
+
+  .winner{
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
   
   .winn {
     border-radius: 10px;
